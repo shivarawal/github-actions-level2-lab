@@ -16,4 +16,10 @@ jobs:
       - name: show env variables
         run: |
           echo "APP Name: $APP_NAME"
+      - name: use secret 
+        env: 
+          MY_SECRET: ${{ secrets.DEMO_SECRET}}
+        run: | 
+          echo "using secret safely" 
           echo "Environment: $APP_ENV"
+          echo "secret test: $MY_Secret"
