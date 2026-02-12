@@ -1,1 +1,8 @@
-
+name: Level 2 Context Exploration 
+on: workflow_dispatch
+jobs: 
+   runs-on: ubuntu-latest
+   steps:
+   - uses: actions/checkout@v4
+   - name: Show FULL github context
+     run: echo '${{ tojson(github) }}'
