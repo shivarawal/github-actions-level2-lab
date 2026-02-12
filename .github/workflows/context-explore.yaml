@@ -18,7 +18,7 @@ jobs:
           echo "APP Name: $APP_NAME"
       - name: use secret 
         env: 
-          MY_SECRET: ${{ secrets.DEMO_SECRET}}
+          MY_SECRET: ${{ secrets.DEMO_SECRET }}
         run: | 
           echo "using secret safely" 
           echo "Environment: $APP_ENV"
