@@ -22,4 +22,4 @@ jobs:
         run: | 
           echo "using secret safely" 
           echo "Environment: $APP_ENV"
-          echo "secret test: $MY_Secret"
+          echo "secret test: $MY_SECRET"
