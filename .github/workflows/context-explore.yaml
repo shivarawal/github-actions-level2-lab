@@ -23,3 +23,14 @@ jobs:
           echo "using secret safely" 
           echo "Environment: $APP_ENV"
           echo "secret test: $MY_SECRET"
+          
+      - name: Always run step 
+        run: echo "This step always runs"
+          
+      - name: Run only on main branch 
+        if: github.ref_name == 'main'
+        run: echo "Running because branch is MAIN"
+          
+      - name: Run only on feature branch
+        if: github.ref_name == 'feature'
+        run: echo "This should be skipped"
