@@ -15,5 +15,5 @@ jobs:
 
       - name: show env variables
         run: |
-          echo "App Name: $App_NAME"
+          echo "APP Name: $APP_NAME"
           echo "Environment: $APP_ENV"
