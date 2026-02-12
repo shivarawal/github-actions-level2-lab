@@ -28,7 +28,7 @@ jobs:
         run: echo "This step always runs"
           
       - name: Run only on main branch 
-        if: (github.ref_name == 'main') && (github.actor == 'shivarawal'
+        if: (github.ref_name == 'main') && (github.actor == 'shivarawal')
         run: echo "Running because branch is MAIN"
           
       - name: Run only on feature branch
